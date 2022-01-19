@@ -1,0 +1,481 @@
+2022-01-19 12:43:04 [127.0.0.1][-][p0gn2t92cgirdbfpithb716tssfjuqmg][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: decisions/companies in C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#1 C:\OpenServer\domains\api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#2 C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#3 C:\OpenServer\domains\api\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\api\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#1 C:\OpenServer\domains\api\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2022-01-19 12:43:04 [127.0.0.1][-][p0gn2t92cgirdbfpithb716tssfjuqmg][info][application] $_GET = []
+
+$_POST = [
+    'Authorization' => 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjRmMWcyM2ExMmFhIn0.eyJpc3MiOiJodHRwOlwvXC9hcGkiLCJhdWQiOiJodHRwOlwvXC9leGFtcGxlLm9yZyIsImp0aSI6IjRmMWcyM2ExMmFhIiwiaWF0IjoxNjQyNDk4Nzg5LCJleHAiOjE2NDI1MDIzODksInVpZCI6MX0.cwm2d5hNyvI5Eo7c2bNgxH2M4OaPzunknDVCN5h5ZbU'
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.29.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => '88f93fd2-5970-44f4-9a65-cdb5ef00dc3d'
+    'HTTP_HOST' => 'api'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=--------------------------418403867898818509858923'
+    'CONTENT_LENGTH' => '434'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.5-Win10\\bin;c:\\openserver\\modules\\database\\PostgreSQL-13.3-Win10\\bin;c:\\openserver\\modules\\database\\PostgreSQL-13.3-Win10\\lib;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Program Files\\nodejs\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Алибек\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2021.2.3\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2020.1\\bin;C:\\Users\\Алибек\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/api/web/index.php'
+    'REMOTE_PORT' => '59491'
+    'REDIRECT_URL' => '/decisions/companies'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/decisions/companies'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1642585384.8585
+    'REQUEST_TIME' => 1642585384
+]
+2022-01-19 12:43:06 [127.0.0.1][-][p0gn2t92cgirdbfpithb716tssfjuqmg][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: decisions/companies in C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#1 C:\OpenServer\domains\api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#2 C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#3 C:\OpenServer\domains\api\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\api\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#1 C:\OpenServer\domains\api\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2022-01-19 12:43:06 [127.0.0.1][-][p0gn2t92cgirdbfpithb716tssfjuqmg][info][application] $_GET = []
+
+$_POST = [
+    'Authorization' => 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjRmMWcyM2ExMmFhIn0.eyJpc3MiOiJodHRwOlwvXC9hcGkiLCJhdWQiOiJodHRwOlwvXC9leGFtcGxlLm9yZyIsImp0aSI6IjRmMWcyM2ExMmFhIiwiaWF0IjoxNjQyNDk4Nzg5LCJleHAiOjE2NDI1MDIzODksInVpZCI6MX0.cwm2d5hNyvI5Eo7c2bNgxH2M4OaPzunknDVCN5h5ZbU'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'p0gn2t92cgirdbfpithb716tssfjuqmg'
+    '_csrf' => 'e00637e92d05adb9ec375f6414a2dca2aa157098cbf50d8bac0ccf0bf32f5224a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yfaldyknCu1hAUfZrLHpO9RjfkeD3ChQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.29.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => '9bf5cf1f-0100-429e-aeb3-89bedc7808ae'
+    'HTTP_HOST' => 'api'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=--------------------------525803816903139072526295'
+    'HTTP_COOKIE' => 'PHPSESSID=p0gn2t92cgirdbfpithb716tssfjuqmg; _csrf=e00637e92d05adb9ec375f6414a2dca2aa157098cbf50d8bac0ccf0bf32f5224a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yfaldyknCu1hAUfZrLHpO9RjfkeD3ChQ%22%3B%7D'
+    'CONTENT_LENGTH' => '434'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.5-Win10\\bin;c:\\openserver\\modules\\database\\PostgreSQL-13.3-Win10\\bin;c:\\openserver\\modules\\database\\PostgreSQL-13.3-Win10\\lib;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Program Files\\nodejs\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Алибек\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2021.2.3\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2020.1\\bin;C:\\Users\\Алибек\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/api/web/index.php'
+    'REMOTE_PORT' => '59491'
+    'REDIRECT_URL' => '/decisions/companies'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/decisions/companies'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1642585386.5549
+    'REQUEST_TIME' => 1642585386
+]
+2022-01-19 12:43:18 [127.0.0.1][-][p0gn2t92cgirdbfpithb716tssfjuqmg][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "decision/companies". in C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\OpenServer\domains\api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#1 C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#2 C:\OpenServer\domains\api\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\api\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#1 C:\OpenServer\domains\api\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2022-01-19 12:43:18 [127.0.0.1][-][p0gn2t92cgirdbfpithb716tssfjuqmg][info][application] $_GET = []
+
+$_POST = [
+    'Authorization' => 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjRmMWcyM2ExMmFhIn0.eyJpc3MiOiJodHRwOlwvXC9hcGkiLCJhdWQiOiJodHRwOlwvXC9leGFtcGxlLm9yZyIsImp0aSI6IjRmMWcyM2ExMmFhIiwiaWF0IjoxNjQyNDk4Nzg5LCJleHAiOjE2NDI1MDIzODksInVpZCI6MX0.cwm2d5hNyvI5Eo7c2bNgxH2M4OaPzunknDVCN5h5ZbU'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'p0gn2t92cgirdbfpithb716tssfjuqmg'
+    '_csrf' => 'e00637e92d05adb9ec375f6414a2dca2aa157098cbf50d8bac0ccf0bf32f5224a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yfaldyknCu1hAUfZrLHpO9RjfkeD3ChQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.29.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => 'bfa93f3a-5a77-4e02-8ecf-bc1bbfc8110b'
+    'HTTP_HOST' => 'api'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=--------------------------362843966218403831338625'
+    'HTTP_COOKIE' => 'PHPSESSID=p0gn2t92cgirdbfpithb716tssfjuqmg; _csrf=e00637e92d05adb9ec375f6414a2dca2aa157098cbf50d8bac0ccf0bf32f5224a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yfaldyknCu1hAUfZrLHpO9RjfkeD3ChQ%22%3B%7D'
+    'CONTENT_LENGTH' => '434'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.5-Win10\\bin;c:\\openserver\\modules\\database\\PostgreSQL-13.3-Win10\\bin;c:\\openserver\\modules\\database\\PostgreSQL-13.3-Win10\\lib;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Program Files\\nodejs\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Алибек\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2021.2.3\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2020.1\\bin;C:\\Users\\Алибек\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/api/web/index.php'
+    'REMOTE_PORT' => '59491'
+    'REDIRECT_URL' => '/decision/companies'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/decision/companies'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1642585398.2999
+    'REQUEST_TIME' => 1642585398
+]
+2022-01-19 12:43:24 [127.0.0.1][-][p0gn2t92cgirdbfpithb716tssfjuqmg][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "decision/company". in C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\OpenServer\domains\api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#1 C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#2 C:\OpenServer\domains\api\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\api\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#1 C:\OpenServer\domains\api\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2022-01-19 12:43:24 [127.0.0.1][-][p0gn2t92cgirdbfpithb716tssfjuqmg][info][application] $_GET = []
+
+$_POST = [
+    'Authorization' => 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjRmMWcyM2ExMmFhIn0.eyJpc3MiOiJodHRwOlwvXC9hcGkiLCJhdWQiOiJodHRwOlwvXC9leGFtcGxlLm9yZyIsImp0aSI6IjRmMWcyM2ExMmFhIiwiaWF0IjoxNjQyNDk4Nzg5LCJleHAiOjE2NDI1MDIzODksInVpZCI6MX0.cwm2d5hNyvI5Eo7c2bNgxH2M4OaPzunknDVCN5h5ZbU'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'p0gn2t92cgirdbfpithb716tssfjuqmg'
+    '_csrf' => 'e00637e92d05adb9ec375f6414a2dca2aa157098cbf50d8bac0ccf0bf32f5224a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yfaldyknCu1hAUfZrLHpO9RjfkeD3ChQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.29.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => '818ac4f5-407c-42ec-a034-be7087081cc9'
+    'HTTP_HOST' => 'api'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=--------------------------571626579642538472410571'
+    'HTTP_COOKIE' => 'PHPSESSID=p0gn2t92cgirdbfpithb716tssfjuqmg; _csrf=e00637e92d05adb9ec375f6414a2dca2aa157098cbf50d8bac0ccf0bf32f5224a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yfaldyknCu1hAUfZrLHpO9RjfkeD3ChQ%22%3B%7D'
+    'CONTENT_LENGTH' => '434'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.5-Win10\\bin;c:\\openserver\\modules\\database\\PostgreSQL-13.3-Win10\\bin;c:\\openserver\\modules\\database\\PostgreSQL-13.3-Win10\\lib;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Program Files\\nodejs\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Алибек\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2021.2.3\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2020.1\\bin;C:\\Users\\Алибек\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/api/web/index.php'
+    'REMOTE_PORT' => '59491'
+    'REDIRECT_URL' => '/decision/company'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/decision/company'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1642585404.1604
+    'REQUEST_TIME' => 1642585404
+]
+2022-01-19 12:43:28 [127.0.0.1][-][p0gn2t92cgirdbfpithb716tssfjuqmg][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: decisions/companies in C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#1 C:\OpenServer\domains\api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#2 C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#3 C:\OpenServer\domains\api\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\api\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#1 C:\OpenServer\domains\api\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2022-01-19 12:43:28 [127.0.0.1][-][p0gn2t92cgirdbfpithb716tssfjuqmg][info][application] $_GET = []
+
+$_POST = [
+    'Authorization' => 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjRmMWcyM2ExMmFhIn0.eyJpc3MiOiJodHRwOlwvXC9hcGkiLCJhdWQiOiJodHRwOlwvXC9leGFtcGxlLm9yZyIsImp0aSI6IjRmMWcyM2ExMmFhIiwiaWF0IjoxNjQyNDk4Nzg5LCJleHAiOjE2NDI1MDIzODksInVpZCI6MX0.cwm2d5hNyvI5Eo7c2bNgxH2M4OaPzunknDVCN5h5ZbU'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'p0gn2t92cgirdbfpithb716tssfjuqmg'
+    '_csrf' => 'e00637e92d05adb9ec375f6414a2dca2aa157098cbf50d8bac0ccf0bf32f5224a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yfaldyknCu1hAUfZrLHpO9RjfkeD3ChQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.29.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => '1969d75e-543f-4224-9eb1-f46c2ac72f1d'
+    'HTTP_HOST' => 'api'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=--------------------------908997083477692955516677'
+    'HTTP_COOKIE' => 'PHPSESSID=p0gn2t92cgirdbfpithb716tssfjuqmg; _csrf=e00637e92d05adb9ec375f6414a2dca2aa157098cbf50d8bac0ccf0bf32f5224a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yfaldyknCu1hAUfZrLHpO9RjfkeD3ChQ%22%3B%7D'
+    'CONTENT_LENGTH' => '434'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.5-Win10\\bin;c:\\openserver\\modules\\database\\PostgreSQL-13.3-Win10\\bin;c:\\openserver\\modules\\database\\PostgreSQL-13.3-Win10\\lib;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Program Files\\nodejs\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Алибек\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2021.2.3\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2020.1\\bin;C:\\Users\\Алибек\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/api/web/index.php'
+    'REMOTE_PORT' => '59491'
+    'REDIRECT_URL' => '/decisions/companies'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/decisions/companies'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1642585408.7758
+    'REQUEST_TIME' => 1642585408
+]
+2022-01-19 13:00:36 [127.0.0.1][-][g7gq0md7jags4h4be5ltn4oa1iqanuhg][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\OpenServer\domains\api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#1 C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#2 C:\OpenServer\domains\api\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OpenServer\domains\api\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#1 C:\OpenServer\domains\api\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2022-01-19 13:00:36 [127.0.0.1][-][g7gq0md7jags4h4be5ltn4oa1iqanuhg][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'g7gq0md7jags4h4be5ltn4oa1iqanuhg'
+    '_csrf' => '076e0a1f75becfe8da72182de7d719f873e790f9cdd82c4fc9ec63722a7f7dafa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qgUZqMhjhSooKWdhZ6ZNloKH_XVKusYD\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'api'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36 OPR/82.0.4227.58'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://api/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=g7gq0md7jags4h4be5ltn4oa1iqanuhg; _csrf=076e0a1f75becfe8da72182de7d719f873e790f9cdd82c4fc9ec63722a7f7dafa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qgUZqMhjhSooKWdhZ6ZNloKH_XVKusYD%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.5-Win10\\bin;c:\\openserver\\modules\\database\\PostgreSQL-13.3-Win10\\bin;c:\\openserver\\modules\\database\\PostgreSQL-13.3-Win10\\lib;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Program Files\\nodejs\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Алибек\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2021.2.3\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2020.1\\bin;C:\\Users\\Алибек\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/api/web/index.php'
+    'REMOTE_PORT' => '59884'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1642586436.0769
+    'REQUEST_TIME' => 1642586436
+]
+2022-01-19 13:33:17 [127.0.0.1][-][p0gn2t92cgirdbfpithb716tssfjuqmg][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\OpenServer\domains\api\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\OpenServer\domains\api\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(76): yii\filters\auth\AuthMethod->handleFailure()
+#1 C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\AuthMethod->beforeAction()
+#2 [internal function]: yii\base\ActionFilter->beforeFilter()
+#3 C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Component.php(633): call_user_func()
+#4 C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger()
+#5 C:\OpenServer\domains\api\vendor\yiisoft\yii2\web\Controller.php(221): yii\base\Controller->beforeAction()
+#6 C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Controller.php(176): yii\web\Controller->beforeAction()
+#7 C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#8 C:\OpenServer\domains\api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#9 C:\OpenServer\domains\api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#10 C:\OpenServer\domains\api\web\index.php(12): yii\base\Application->run()
+#11 {main}
+2022-01-19 13:33:17 [127.0.0.1][-][p0gn2t92cgirdbfpithb716tssfjuqmg][info][application] $_GET = []
+
+$_POST = [
+    'Authorization' => 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjRmMWcyM2ExMmFhIn0.eyJpc3MiOiJodHRwOlwvXC9hcGkiLCJhdWQiOiJodHRwOlwvXC9leGFtcGxlLm9yZyIsImp0aSI6IjRmMWcyM2ExMmFhIiwiaWF0IjoxNjQyNDk4Nzg5LCJleHAiOjE2NDI1MDIzODksInVpZCI6MX0.cwm2d5hNyvI5Eo7c2bNgxH2M4OaPzunknDVCN5h5ZbU'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'p0gn2t92cgirdbfpithb716tssfjuqmg'
+    '_csrf' => 'e00637e92d05adb9ec375f6414a2dca2aa157098cbf50d8bac0ccf0bf32f5224a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yfaldyknCu1hAUfZrLHpO9RjfkeD3ChQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.29.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => '1b7478c3-3813-4bb4-8450-22b830945b34'
+    'HTTP_HOST' => 'api'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=--------------------------099170429235743175960426'
+    'HTTP_COOKIE' => 'PHPSESSID=p0gn2t92cgirdbfpithb716tssfjuqmg; _csrf=e00637e92d05adb9ec375f6414a2dca2aa157098cbf50d8bac0ccf0bf32f5224a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yfaldyknCu1hAUfZrLHpO9RjfkeD3ChQ%22%3B%7D'
+    'CONTENT_LENGTH' => '434'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.5-Win10\\bin;c:\\openserver\\modules\\database\\PostgreSQL-13.3-Win10\\bin;c:\\openserver\\modules\\database\\PostgreSQL-13.3-Win10\\lib;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Program Files\\nodejs\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Алибек\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2021.2.3\\bin;C:\\Program Files\\JetBrains\\PhpStorm 2020.1\\bin;C:\\Users\\Алибек\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/api/web/index.php'
+    'REMOTE_PORT' => '60914'
+    'REDIRECT_URL' => '/decisions/company'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/decisions/company'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1642588397.0413
+    'REQUEST_TIME' => 1642588397
+]

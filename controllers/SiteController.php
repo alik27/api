@@ -44,6 +44,6 @@ class SiteController extends Controller
        /* $model = new ImageUploadForm();
         $model->images = UploadedFile::getInstances($model, 'images');
         $file = $model->upload();*/
-        return $this->render('index',/*compact('model')*/);
+        return $this->render('index'/*compact('model')*/);
     }
 }

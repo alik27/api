@@ -21,7 +21,8 @@ class RestController extends Controller
             'class' => JwtHttpBearerAuth::class,
             'optional' => [
                 'login',
-                'registration',
+                'expert',
+                'moderator',
             ],
         ];
 
@@ -31,7 +32,8 @@ class RestController extends Controller
     {
         return [
             'login' => ['POST'],
-            'registration' => ['POST'],
+            'expert' => ['POST'],
+            'moderator' => ['POST'],
         ];
     }
 

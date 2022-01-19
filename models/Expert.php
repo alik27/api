@@ -6,26 +6,6 @@ use phpDocumentor\Reflection\Types\Array_;
 use Yii;
 use yii\helpers\ArrayHelper;
 
-/**
- * This is the model class for table "expert".
- *
- * @property int $id
- * @property string|null $first_name
- * @property string|null $last_name
- * @property string|null $middle_name
- * @property string|null $email
- * @property int|null $birthday
- * @property string|null $work_Experience
- * @property int|null $age
- * @property string|null $sex
- * @property string $login
- * @property string $pass
- * @property string|null $about
- *
- * @property Application[] $applications
- * @property DecisionCard[] $decisionCards
- * @property Estimations[] $estimations
- */
 class Expert extends \yii\db\ActiveRecord
 {
     /**
@@ -67,6 +47,7 @@ class Expert extends \yii\db\ActiveRecord
             'login' => 'Логин',
             'pass' => 'Пароль',
             'about' => 'О себе',
+            'activ' => 'вкл',
         ];
     }
 

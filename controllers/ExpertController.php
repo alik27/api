@@ -2,13 +2,10 @@
 
 namespace app\controllers;
 
-use app\models\Application;
 use app\models\Estimations;
-use app\models\Rating;
 use sizeg\jwt\JwtHttpBearerAuth;
 use Yii;
 use yii\data\ActiveDataProvider;
-use yii\helpers\ArrayHelper;
 use yii\rest\Controller;
 use app\models\Expert;
 
@@ -50,8 +47,17 @@ class ExpertController extends Controller
             $query->email=Yii::$app->request->post('email');
             $query->birthday=Yii::$app->request->post('birthday');
             $query->about=Yii::$app->request->post('about');
-            return $query->save();
-        }else {
+            if($query->save()) {
+                return $this->asJson([
+                    'success' => true,
+                ]);
+            }
+            else{
+                return $this->asJson([
+                    'success' => false,
+                ]);
+            }
+        }elseif (Yii::$app->request->get('id')) {
             $query = Expert::find()
                 ->andWhere(['expert.id' => Yii::$app->request->get('id')])
                 ->joinWith('certificates')
@@ -82,7 +88,7 @@ class ExpertController extends Controller
     }
     public function actionYes()
     {
-        $query = Application::updateAll(['isAccepted' => 1], ['id_Expert' =>Yii::$app->request->get('id')]);
+        $query = Expert::updateAll(['activ' => 1], ['id' =>Yii::$app->request->get('id')]);
 
         if($query) {
             return $this->asJson([
@@ -97,7 +103,7 @@ class ExpertController extends Controller
     }
     public function actionNo()
     {
-        $query = Application::updateAll(['isAccepted' => 0], ['id_Expert' =>Yii::$app->request->get('id')]);
+        $query = Expert::updateAll(['activ' => 0], ['id' =>Yii::$app->request->get('id')]);
 
         if($query) {
             return $this->asJson([

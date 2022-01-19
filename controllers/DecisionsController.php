@@ -2,6 +2,8 @@
 
 namespace app\controllers;
 
+use app\models\Application;
+use app\models\Company;
 use app\models\Estimations;
 use app\models\Expert;
 use app\models\Files;
@@ -20,7 +22,7 @@ class DecisionsController extends Controller
 {
     public $modelClass = 'app\models\DecisionCard';
 
-    /*public function behaviors()
+    public function behaviors()
     {
         $behaviors = parent::behaviors();
         $behaviors['authenticator'] = [
@@ -28,13 +30,16 @@ class DecisionsController extends Controller
         ];
 
         return $behaviors;
-    }*/
+    }
 
     protected function verbs()
     {
         return [
             'index' => ['GET'],
             'decision' => ['GET'],
+            'company' => ['POST'],
+            'add' => ['POST'],
+            'delete' => ['GET'],
         ];
     }
 
@@ -65,10 +70,13 @@ class DecisionsController extends Controller
                 return $this->asJson([
                     'success' => true,
                 ]);
+            }else {
+                return $this->asJson([
+                    'success' => false,
+                ]);
             }
-            return $query->save();
 
-        }else {
+        }elseif (Yii::$app->request->get('id')) {
             $query = DecisionCard::find()
                 ->select('decision_card.id,title,themes,description,efficiency,decision_card.image_URL
                 ,company.id,company.entity,company.inn,company.link,company.email,company.tel,company.region,company.address,company.category,company.year_Foundation,company.number_Employees,company.sales,company.image_URL
@@ -77,6 +85,69 @@ class DecisionsController extends Controller
                 ->joinWith('companies')->joinWith('comment')->asArray()->limit(1)->one();
 
             return $query;
+        }
+    }
+
+    public function actionDelete()
+    {
+        if(Yii::$app->request->get('id')){
+            DecisionCard::deleteAll(['id'=>Yii::$app->request->get('id')]);
+        }
+    }
+
+    public function actionAdd()
+    {
+        if(Yii::$app->request->post('title')){
+            $query = new DecisionCard;
+            $query->type=Yii::$app->request->post('type');
+            $query->title=Yii::$app->request->post('title');
+            $query->themes=Yii::$app->request->post('themes');
+            $query->description=Yii::$app->request->post('description');
+            $query->efficiency=Yii::$app->request->post('efficiency');
+            $query->image_URL=Yii::$app->request->post('image_URL');
+            $query->id_Expert=Yii::$app->request->post('id_Expert');
+            $query->id_Moderator=Yii::$app->request->post('id_Moderator');
+            $query->created_at=time();
+            if($query->save()){
+                return $this->asJson([
+                    'success' => true,
+                ]);
+            }else {
+                return $this->asJson([
+                    'success' => false,
+                ]);
+            }
+            }
+    }
+
+    public function actionCompany()
+    {
+        if(Yii::$app->request->post('title')){
+            $query = new Company;
+            $query->entity=Yii::$app->request->post('entity');
+            $query->inn=Yii::$app->request->post('inn');
+            $query->link=Yii::$app->request->post('link');
+            $query->email=Yii::$app->request->post('email');
+            $query->tel=Yii::$app->request->post('tel');
+            $query->region=Yii::$app->request->post('region');
+            $query->address=Yii::$app->request->post('address');
+            $query->category=Yii::$app->request->post('category');
+            $query->year_Foundation=Yii::$app->request->post('year_Foundation');
+            $query->number_Employees=Yii::$app->request->post('number_Employees');
+            $query->sales=Yii::$app->request->post('sales');
+            $query->image_URL=Yii::$app->request->post('image_URL');
+            $query->id_Product=Yii::$app->request->post('id_Product');
+            $query->id_Decision_card=Yii::$app->request->post('id_Decision_card');
+
+            if($query->save()){
+                return $this->asJson([
+                    'success' => true,
+                ]);
+            }else {
+                return $this->asJson([
+                    'success' => false,
+                ]);
+            }
         }
     }
 

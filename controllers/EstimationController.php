@@ -31,7 +31,15 @@ class EstimationController extends Controller
             'index' => ['GET'],
             'upload' => ['GET','POST'],
             'ref' => ['GET','POST'],
+            'delete' => ['GET'],
         ];
+    }
+
+    public function actionDelete()
+    {
+        if(Yii::$app->request->get('id')){
+            Estimations::deleteAll(['id'=>Yii::$app->request->get('id')]);
+        }
     }
 
     public function actionRef()
