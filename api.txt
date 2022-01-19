@@ -1,0 +1,110 @@
+
+CREATE TABLE moderator
+(
+id INT PRIMARY KEY AUTO_INCREMENT,
+first_name varchar(45),
+last_name varchar(45),
+middle_name varchar(45),
+email varchar(45),
+birthday INT,
+work_Experience varchar(45),
+age INT,
+sex varchar(45),
+login varchar(45) NOT NULL UNIQUE,
+pass varchar(45) NOT NULL UNIQUE,
+about varchar(200)
+);
+
+CREATE TABLE expert
+(
+id INT PRIMARY KEY AUTO_INCREMENT,
+first_name varchar(45),
+last_name varchar(45),
+middle_name varchar(45),
+email varchar(45),
+birthday INT,
+work_Experience varchar(45),
+age INT,
+sex varchar(45),
+login varchar(45) NOT NULL UNIQUE,
+pass varchar(45) NOT NULL UNIQUE,
+about varchar(200)
+activ INT, //0-отключ,1-вкл
+);
+
+CREATE TABLE files
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+	id_Moderator INT,
+    id_Expert INT,
+    id_Decision_card INT,
+    type INT NOT NULL,//1-сертификат,2-отзыв,3-отчеты
+    file_URL varchar(100),
+    about varchar(200)
+);
+
+CREATE TABLE application
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    type varchar(45) NOT NULL,
+    id_Expert INT NOT NULL,
+    isAccepted TINYINT(1), //1 - отключить, 2 - включить
+    id_Moderator INT NOT NULL,
+    applicationcol varchar(45),
+    FOREIGN KEY (id_Moderator)  REFERENCES moderator (id),
+    FOREIGN KEY (id_Expert)  REFERENCES expert (id)
+);
+
+CREATE TABLE decision_card
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    type varchar(45) NOT NULL,
+    title varchar(45) NOT NULL,
+    themes varchar(45),
+    description text,
+    efficiency varchar(45),
+    image_URL varchar(45),
+    id_Moderator INT NOT NULL, 
+    id_Expert INT NOT NULL, 
+	created_at INT, 
+    FOREIGN KEY (id_Moderator)  REFERENCES moderator (id),
+    FOREIGN KEY (id_Expert)  REFERENCES expert (id)
+);
+CREATE TABLE company
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    entity varchar(45) NOT NULL,
+    inn varchar(45) NOT NULL,
+    link varchar(45) NOT NULL,
+    email varchar(45) NOT NULL,
+    tel varchar(45),
+    region varchar(45),
+    address varchar(45),
+	category varchar(45),
+	year_Foundation varchar(45),
+number_Employees INT NOT NULL,
+sales INT NOT NULL,
+    image_URL varchar(45),
+    id_Product INT NOT NULL, 
+    id_Decision_card INT NOT NULL,
+    FOREIGN KEY (id_Decision_card)  REFERENCES decision_card (id)
+);
+CREATE TABLE estimations
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+   	id_Expert INT NOT NULL, 
+	id_Decision_card INT NOT NULL,
+    FOREIGN KEY (id_Expert)  REFERENCES expert (id),
+    FOREIGN KEY (id_Decision_card)  REFERENCES decision_card (id)
+);
+
+CREATE TABLE rating
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    criterion1 INT, 
+    criterion2 INT, 
+    criterion3 INT, 
+    criterion4 INT, 
+    id_Decision_card INT NOT NULL, 
+    FOREIGN KEY (id_Decision_card)  REFERENCES decision_card (id)
+);
